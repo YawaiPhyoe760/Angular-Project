@@ -1,0 +1,6 @@
+<input type="text" #input>
+<button (click)="addData(input.value)">Add Data</button>
+
+<div *ngFor="let data of dataAry">
+    <p class="alert alert-info">{{data}}</p>
+</div>
